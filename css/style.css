@@ -54,8 +54,8 @@
 }
 .navbar-nav>li>a:hover,
 .navbar-nav>li>a.active{
-text-decoration:5px underline #b4233c;
- text-underline-offset: 10px;
+    text-decoration:5px underline #b4233c;
+    text-underline-offset: 10px;  
 }
 /* booknow button */
 .button{
