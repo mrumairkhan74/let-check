@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/images/2.png" width="100px" />
+    <link rel="icon" type="image/png" href="./images/2.png" width="100px" />
     <title>Fixo Phone</title>
 
     <!-- style css -->
-    <link rel="stylesheet" href="css/style.css"  />
+    <link rel="stylesheet" href="./css/style.css"  />
 
     <!-- bootstrap csss -->
     <link
@@ -25,7 +25,7 @@
     >
       <div class="container-fluid flex-wrap">
         <div class="logo">
-          <img src="/images/2.png" alt="logo" />
+          <img src="./images/2.png" alt="logo" />
         </div>
         <button
           class="navbar-toggler"
@@ -45,7 +45,7 @@
             <li><a href="">Contact</a></li>
             <a href="https://wa.me/923476985088" target="_blank">
               <img
-                src="/images/whatsapp.svg"
+                src="./images/whatsapp.svg"
                 class="whatsapp"
                 type="button"
                 alt="whatsapp"
@@ -60,9 +60,9 @@
     <div class="popup">
       <div class="popup-content">
           <div class="logo-1">
-              <img src="/images/2.png" alt="logo" />
+              <img src="./images/2.png" alt="logo" />
               <h5>Get Query</h5>
-              <a href="#" class="close-1" id="close"><img src="/images/close.svg" alt=""></a>
+              <a href="#" class="close-1" id="close"><img src="./images/close.svg" alt=""></a>
         </div>
         <div class="form">
           <div class="d-flex flex-wrap">
@@ -129,6 +129,17 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <script src="/script.js"></script>
+    <script>
+        document.getElementById('button').addEventListener("click",function(){
+    document.querySelector('.popup').style.display='flex';
+})
+document.querySelector('#close').addEventListener("click",function(){
+    document.querySelector('.popup').style.display="none";
+})
+document.querySelector('.close').addEventListener("click",function(){
+    document.querySelector('.popup').style.display="none";
+})
+    </script>
+    <!-- <script src="/script.js"></script> -->
   </body>
 </html>
