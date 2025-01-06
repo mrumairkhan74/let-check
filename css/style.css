@@ -14,11 +14,11 @@
     font-family: 1.5rem;
     letter-spacing: 2px;
     font-weight: bold;
-    color: #000;
+    color: #b4233c;
 }
 .logo a:hover{
     
-    text-decoration:5px underline #000;
+    text-decoration:5px underline #b4233c;
     text-underline-offset: 10px;
 }
 /* whatsapp icon */
@@ -47,7 +47,7 @@
 
 .navbar-nav>li>a{
     text-decoration: none;
-    color: #000;
+    color: #b4233c;
     padding: 10px;
     font-size: 16px;
 }
@@ -55,17 +55,17 @@
 .button{
     text-decoration: none;
     color: #fff;
-    background-color: #000;
+    background-color: #b4233c;
     padding: 5px;
     text-transform: uppercase;
     border-radius: 5px;
     margin: 10px;
 }
 .button:hover{
-    border: 2px solid #000;
+    border: 2px solid #b4233c;
     border-radius: 5px;
     background: none;
-    color: #000;
+    color: #b4233c;
 }
 /* popup content */
 .popup{
