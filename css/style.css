@@ -194,6 +194,7 @@ padding: 4px;
     /* popup content css-responsive */
     .popup{
         background-color: transparent;
+      margin-top: 200px;
     }
     .popup-content{
         width: 300px;
