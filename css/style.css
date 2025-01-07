@@ -1,0 +1,437 @@
+.logo{
+ display: block;
+ width: 30%;
+ padding: 10px;
+ justify-content: center;
+ align-items: center;
+}
+
+.logo img{
+    width: 100px;
+    cursor: pointer;
+}
+.logo a{
+    text-decoration:  none;
+    font-family: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #b4233c;
+}
+.logo a:hover{
+    
+    text-decoration:5px underline #b4233c;
+    text-underline-offset: 10px;
+}
+/* whatsapp icon */
+.whatsapp{
+    width: 50px !important;
+    margin: 10px;
+    padding: 10px;
+}
+/* navbar css */
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.navbar-nav{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav>li{
+    list-style: none;
+}
+
+.navbar-nav>li>a{
+    text-decoration: none;
+    color: #b4233c;
+    padding: 10px;
+    font-size: 16px;
+ margin:10px;
+}
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a.active{
+    text-decoration:5px underline #b4233c;
+    text-underline-offset: 5px;  
+}
+/* booknow button */
+.button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #b4233c;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 10px;
+}
+.button:hover{
+    border: 2px solid #b4233c;
+    border-radius: 5px;
+    background: none;
+    color: #b4233c;
+}
+/* popup content */
+.popup{
+    background: none;
+    width: 100%;
+    height: 100%;
+    top:100px;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+/* popup form csss */
+.popup-content{
+    background: #fff;
+    border: 1px solid #000;
+    width: 500px;
+    height: 600px;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    color: #000;
+    box-shadow: 1px 1px 5px 2px #b4233c;
+    overflow: auto;
+}
+
+/* logo-contact us */
+.logo-1{
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid #b4233c; */
+    width: 100%;
+}
+.logo-1 img{
+    width: 100px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+/* form csss */
+.form{
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+}
+.form label{
+display: block;
+width: 100%;
+font-size: 18px ;
+font-weight: 500;
+padding: 4px;
+color: #b4233c;
+letter-spacing: 1px;
+}
+.form input{
+    width: 100%;
+    display: block;
+    margin: auto;
+    border: 1px solid #b4233c;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px;
+}
+.form select{
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid #b4233c;
+    border-radius: 5px;
+    padding: 10px;
+}
+.form option{
+    padding: 5px 10px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+/* submit button css */
+.submit{
+    text-decoration: none;
+    color: #fff;
+    background-color: #b4233c;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 10px;
+}
+.submit:hover{
+    border: 2px solid #b4233c;
+    border-radius: 5px;
+    background: none;
+    color: #b4233c;
+}
+/* close button csss */
+.close{
+
+    border-radius: 5px;
+    background: none;
+    color: #b4233c;
+    margin:10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    align-items: center;
+}
+.close-1 img{
+    position: absolute;
+    width: 20px;
+    top: 0px;
+    left: 10px;
+    cursor: pointer;
+}
+.close:hover{
+    color: #fff;
+    background-color: #b4233c;
+}
+.button-1{
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* home */
+
+.container img{
+    width: 100%;
+    height: 500px;
+}
+.home button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%); background-color: #b4233c;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+/* services */
+.services{
+    display: block;
+    width: 100%;
+    margin:20px auto;
+}
+.services h1{
+    color: #b4233c;
+    letter-spacing: 2px ;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.services p{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 8px;
+    color: rgb(131, 130, 130);
+}
+.button-4{
+    display: block;
+    width:auto;
+    margin: auto;
+    color: #b4233c;
+    border:2px solid #b4233c;
+    border-radius: 5px;
+    padding: 8px;
+}
+.button-4:hover{
+    background-color: #b4233c;
+    color:#fff ;
+}
+/* mobile laptop */
+.mobile-laptop {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.mobile-laptop img{
+    display: block;
+    width: 50%;
+    margin: auto 10px;
+    border-radius: 5px;
+}
+.mobile-laptop .text{
+    display: block;
+    width: 100% !important;
+    margin: auto 20px;
+    padding: 10px;
+}
+.text h1{
+    font-size: 2rem;
+}
+.text li{
+    font-size: 16px;
+    color: grey;
+}
+.text li strong{
+    font-size: 18px;
+    color: #000000;
+}
+
+
+/* service.html */
+.container{
+    display: block;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    display: block;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #b4233c;
+}
+
+.heading h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #b4233c;
+    text-transform: uppercase;
+}
+
+.text-2{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+.text-2 p{
+    margin: 20px;
+    padding: 10px;
+}
+.photo{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.mobile-1,.laptop-1{
+    margin: 10px;
+    width: 100%;
+    border: 2px solid #b4233c;
+    border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.mobile-1 img{
+    border-radius:20px ;
+}
+.laptop-1 img{
+    border-radius: 20px;
+}
+
+.detail h4{
+    font-size: 2rem;
+    color: #b4233c;
+    font-family: 'Segoe UI', 'Tahoma', Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.detail h5{
+    color: #b4233c;
+    font-family:  Tahoma;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+@media (max-width:769px){
+    /* popup content css-responsive */
+    .popup{
+        background-color: transparent;
+        /* margin-top: 100px; */
+    }
+    .popup-content{
+        width: 300px;
+        height: 500px;
+        padding: 15px;
+        overflow: auto;
+    }
+    .form option{
+        width: 100px;
+    }
+    .logo-1 img{
+        width: 100px;
+    }
+    .logo-1 h5{
+        font-size: 16px;
+    }
+    .close-1 img{
+        width: 15px;
+    }
+    /*  */
+    .container img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .home button{
+        position: relative;
+        /* top: 30%; */
+        /* left: 50%; */
+        transform: translate(-50%,-50%); background-color: #b4233c;
+        color: #fff;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 10px;
+    }
+    .services{
+        font-size: 12px;
+    }
+    /* laptop/mobile */
+    .mobile-laptop{
+        flex-direction: column;
+    }
+    .mobile-laptop img{
+        width: 100%;
+    }
+    .text li{
+        font-size: 12px;
+        padding:2px 10px;
+    }
+    .text li strong{
+        color: #242323;
+        font-size: 14px;
+    }
+
+
+    /* services.html start responsive */
+    .heading h1{
+        font-size: 2rem;
+    }
+    .text-2{
+        font-size: 14px;
+    }
+    .photo{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
+}
