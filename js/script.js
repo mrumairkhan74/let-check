@@ -5,6 +5,6 @@ const form = document.forms['contact-form']
     e.preventDefault();
     fetch(scriptUrl,{method:'POST',body: new FormData(form)})
     .then(response => alert("Thanks you! Your Request is Submitted Successfully. Our Team Will Contact you soon After Review Your Request"))
-    .then(()=>{window.location.href='../index.html'})
+    .then(()=>{window.location.reload();})
     .catch(error=>console.error('Error!',error.message))
  })
