@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/2.png" width="100px" />
+    <title>Fixo Phone</title>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- bootstrap csss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid flex-wrap">
+        <div class="logo">
+          <img src="./images/2.png" alt="logo" href="./index.html" />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto overflow-hidden">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./service.html" class="active">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <a href="https://wa.me/923476985088" target="_blank">
+              <img
+                src="./images/whatsapp.svg"
+                class="whatsapp"
+                type="button"
+                alt="whatsapp"
+            /></a>
+            <a class="button" type="button" id="button-1">Book Now</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- popup container -->
+    <div class="popup">
+      <div class="popup-content">
+        <div class="logo-1">
+          <img src="./images/2.png" alt="logo" />
+          <a class="close-1" id="close-1"
+            ><img src="./images/close.svg" alt=""
+          /></a>
+        </div>
+        <div class="form">
+          <div class="d-flex flex-wrap">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required name="name" />
+            <label for="phoneno">Phone no:</label>
+            <input type="number" id="phoneno" required name="phoneno" />
+          </div>
+          <label for="pickup">Pickup Location:</label>
+          <input type="text" id="pickup" required name="pickup" />
+          <div class="d-flex flex-wrap">
+            <label for="time">Time:</label>
+            <input type="time" id="time" class="time" />
+            <label for="date">Date:</label>
+            <input type="date" id="date" class="date" />
+          </div>
+          <div class="d-flex flex-wrap">
+            <label for="devices">Devices:</label>
+            <select name="device" id="device">
+              <option value="0" selected>Select Device</option>
+              <option value="1">Mobile</option>
+              <option value="2">Laptop</option>
+              <option value="3">Iphone</option>
+              <option value="4">Macbook</option>
+              <option value="5">iWatch</option>
+            </select>
+            <label for="problem">Problem:</label>
+            <select name="problem" id="problem">
+              <option value="6">What is Problem???</option>
+              <option value="7">Screen Isssue</option>
+              <option value="8">Battery issue</option>
+              <option value="9">Charging Port Issue</option>
+              <option value="10">Software issue</option>
+              <option value="11">Water or Liquid Issue</option>
+              <option value="13">Speaker and Mic Issue</option>
+            </select>
+          </div>
+          <label for="bestway">Best Way:</label>
+          <select name="bestway" id="bestway">
+            <option value="13" selected>Best way to Contact You???</option>
+            <option value="14">Call</option>
+            <option value="15">Whatsapp message</option>
+            <option value="16">Sms</option>
+          </select>
+          <label for="message">Message:</label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Enter Addition Information "
+          />
+          <div class="d-flex button-1">
+            <a class="submit" type="button" id="submit">Submit</a>
+            <a class="close" type="button" id="close-4">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main services container  -->
+    <div class="container">
+      <!-- main heading -->
+      <div class="heading">
+        <h1>Services</h1>
+      </div>
+      <div class="text-2">
+        <p>
+          We provide essential services for fixing and maintaining smartphones,
+          laptops, and other electronic devices. We typically handle issues such
+          as screen replacements, battery repairs, software troubleshooting, and
+          hardware fixes like charging port or motherboard repairs.Our
+          Technicians use specialized tools and diagnostic software to assess
+          and repair devices, ensuring a fast and efficient service. We may also
+          offer data recovery, virus removal, and general maintenance services
+          for both individual customers and businesses. With expertise in both
+          hardware and software, Our services are crucial for extending the
+          lifespan of devices, providing warranty options, and offering
+          competitive pricing for common repair needs.
+        </p>
+        <button class="button-4" onclick="Goto()">Read More</button>
+      </div>
+      <!-- pics display -->
+      <div class="photo">
+        <div class="mobile-1">
+          <img src="./images/iphone.jpg" alt="" />
+        </div>
+        <div class="laptop-1">
+          <img src="./images/macbook.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="detail">
+        <ol class="p-3">
+          <ul>
+            <li>
+              <h4>Services Offered</h4>
+            </li>
+            <ol>
+              <li>
+                <ul class="p-2">
+                  <h5>Mobile Repair:</h5>
+                  <li>
+                    <b>Screen Replacement:</b> Replacing cracked or damaged
+                    screens for various mobile models (smartphones, tablets).
+                  </li>
+                  <li>
+                    <b>Battery Replacement: </b>Fixing issues related to battery
+                    performance, including slow charging or no charging.
+                  </li>
+                  <li>
+                    <b>Water Damage Repair:</b> Salvaging devices affected by
+                    water damage.
+                  </li>
+                  <li>
+                    <b>Charging Port Repair:</b>Fixing issues where the charging
+                    port is loose or not working.
+                  </li>
+                  <li>
+                    <b>Camera Repair:</b> Repairing or replacing faulty front or
+                    rear cameras.
+                  </li>
+                  <li>
+                    <b>Software Issues: </b> Fixing problems related to the
+                    operating system, including factory resets, software
+                    upgrades, app crashes, and virus removal.
+                  </li>
+                  <li>
+                    <b>Speaker/Microphone Repair: </b> Repairing or replacing
+                    faulty speakers or microphones.
+                  </li>
+                  <li>
+                    <b>Button/Touchscreen Repair:</b> Fixing issues with
+                    unresponsive buttons or malfunctioning touchscreens.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="p-2">
+                  <h5>Laptop Repair:</h5>
+                  <li>
+                    <b>Screen Repair/Replacement:</b> Fixing cracked, dim, or
+                    malfunctioning laptop screens.
+                  </li>
+                  <li>
+                    <b>Battery Issues:</b>Replacing old or damaged laptop
+                    batteries and improving battery performance.
+                  </li>
+                  <li>
+                    <b>Keyboard Repair:</b>Fixing stuck or unresponsive keys on
+                    a laptop keyboard.
+                  </li>
+                  <li>
+                    <b>HDD/SSD Replacement:</b><br />Upgrading or replacing
+                    malfunctioning hard drives and SSDs for faster performance
+                    or data recovery.
+                  </li>
+                  <li>
+                    <b>RAM Upgrade:</b>Increasing the memory (RAM) for better
+                    speed or replacing faulty RAM.
+                  </li>
+                  <li>
+                    <b>Overheating Fixes:</b>Cleaning out dust, replacing
+                    thermal paste, or fixing fan issues to prevent overheating.
+                  </li>
+                  <li>
+                    <b>Motherboard Repair: </b>Repairing or replacing faulty
+                    components on the motherboard.
+                  </li>
+                  <li>
+                    <b>Data Recovery:</b> Recovering lost data from damaged or
+                    corrupted hard drives or SSDs.
+                  </li>
+                  <li>
+                    <b>Software Issues:</b>Resolving operating system problems,
+                    reinstalling OS, troubleshooting application errors, and
+                    removing viruses/malware.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="p-2">
+                  <h5>Diagnostic Services:</h5>
+                  <p>
+                    We offer diagnostic checks to identify issues in both
+                    laptops and mobile devices. This could include identifying
+                    hidden software problems, hardware damage, or battery
+                    issues.
+                  </p>
+                </ul>
+              </li>
+            </ol>
+          </ul>
+        </ol>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // menu book now button
+      document
+        .getElementById("button-1")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "flex";
+          document.querySelector("#button-2").style.display = "none";
+        });
+      //   2nd button
+      // menu Close button
+      document.querySelector("#close-1").addEventListener("click", function () {
+        // document.querySelector("#button-2").style.display = "flex";
+        document.querySelector(".popup").style.display = "none";
+      });
+      document.querySelector("#close-4").addEventListener("click", function () {
+        // document.querySelector("#button-2").style.display = "flex";
+        document.querySelector(".popup").style.display = "none";
+      });
+
+      // location change javascript
+      function Goto() {
+        window.location.href = "./service.html";
+      }
+    </script>
+    <!-- <script src="/script.js"></script> -->
+  </body>
+</html>
