@@ -5,6 +5,35 @@ const form = document.forms['contact-form']
     e.preventDefault();
     fetch(scriptUrl,{method:'POST',body: new FormData(form)})
     .then(response => alert("Thanks you! Your Request is Submitted Successfully. Our Team Will Contact you soon After Review Your Request"))
-    .then(()=>{window.location.reload();})
+    .then(()=>{window.location.href='../index.html'})
     .catch(error=>console.error('Error!',error.message))
  })
+
+
+
+
+       // hidden input script
+       function showInputBox() {
+         var selectedOption = document.getElementById("device").value;
+         var inputBox = document.getElementById("otherInput");
+
+         // Check if "Other" option is selected
+         if (selectedOption === "other") {
+             inputBox.style.display = "block"; // Show the input box
+         } else {
+             inputBox.style.display = "none"; // Hide the input box
+         }
+     }
+   function showInputBox1() {
+         var selectedOption = document.getElementById("problem").value;
+         var inputBox = document.getElementById("otherInput1");
+
+         // Check if "Other" option is selected
+         if (selectedOption === "other") {
+             inputBox.style.display = "block"; // Show the input box
+         } else {
+             inputBox.style.display = "none"; // Hide the input box
+         }
+
+         
+     }
