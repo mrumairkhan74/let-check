@@ -38,9 +38,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto overflow-hidden">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./service.html" >Services</a></li>
+            <li><a href="./service.html">Services</a></li>
             <li><a href="./contact.html" class="active">Contact</a></li>
-            <a href="https://wa.me/13658339601" target="_blank">
+            <a href="https://wa.me/923476985088" target="_blank">
               <img
                 src="./images/whatsapp.svg"
                 class="whatsapp"
@@ -53,72 +53,117 @@
       </div>
     </nav>
 
-  <!-- popup container -->
-  <div class="popup">
-    <div class="popup-content">
-      <div class="logo-1">
-        <img src="./images/2.png" alt="logo" />
-        <a class="close-1" id="close-1"
-          ><img src="./images/close.svg" alt=""
-        /></a>
+    <!-- popup container -->
+    <div class="popup">
+      <div class="popup-content">
+        <div class="logo-1">
+          <img src="./images/2.png" alt="logo" />
+          <a class="close-1" id="close-1"
+            ><img src="./images/close.svg" alt=""
+          /></a>
+        </div>
+        <form class="form" name="contact-form" action="" method="post">
+
+          <!-- Name Phone No -->
+          <div class="d-flex flex-wrap">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required name="name" />
+            <label for="phoneno">Phone no:</label>
+            <input type="number" id="phoneno" required name="phoneno" />
+          </div>
+          <!-- Pickup Location -->
+
+          <!--Address and Postal Code  -->
+          <div class="d-flex flex-wrap">
+            <label for="address"> Pickup Address:</label>
+            <input type="text" id="address" name="address" required/>
+            <label for="postalcode">Postal Code:</label>
+            <input type="number" id="postalcode" name="postalcode" required/>
+          </div>
+
+          <!-- time and date flex  -->
+          <div class="d-flex flex-wrap">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required />
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <!-- Devices -->
+          <div class="d-flex flex-wrap">
+            <label for="devices">Device:</label>
+            <select name="device" id="device" onchange="showInputBox()" required>
+              <option value="Select Device" selected>Select Device</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Laptop">Laptop</option>
+              <option value="Iphone">Iphone</option>
+              <option value="Sumsung">Sumsung</option>
+              <option value="iWatch">iWatch</option>
+              <option value="other">Others</option>
+            </select>
+
+            <!-- Hidden input box initially for Device -->
+            <div id="otherInput" style="display: none; width: 100%">
+              <p>
+                If you have any other device apart from the ones mentioned above, please provide the details in the message box, including the following:
+                <b>Device Name: [Insert Name]</b>
+              <b> Device Model: [Insert Model]</b>
+
+              </p>
+            </div>
+
+            <!-- Problem -->
+            <label for="problem">Problem:</label>
+            <select name="problem" id="problem" onchange="showInputBox1()" required>
+              <option value="What is Problem???">What is Problem???</option>
+              <option value="Screen Isssue">Screen Isssue</option>
+              <option value="Battery issue">Battery issue</option>
+              <option value="Charging Port Issue">Charging Port Issue</option>
+              <option value="Software issue">Software issue</option>
+              <option value="Water or Liquid Issue">
+                Water or Liquid Issue
+              </option>
+              <option value="Speaker and Mic Issue">
+                Speaker and Mic Issue
+              </option>
+              <option value="other">Others</option>
+            </select>
+
+            <!-- other for Probelm -->
+            <div id="otherInput1" style="display: none; width: 100%">
+              <p>If you encounter any other issues, please feel free to mention them in the message box.</p>
+            </div>
+          
+          </div>
+
+          <!-- Best Way -->
+          <label for="bestway">Best Way:</label>
+          <select name="bestway" id="bestway" required>
+            <option value="Best way to Contact You???" selected>
+              Best way to Contact You???
+            </option>
+            <option value="Call">Call</option>
+            <option value="Whatsapp message">Whatsapp message</option>
+            <option value="Sms">Sms</option>
+          </select>
+
+          <!-- Message -->
+          <label for="message">Message:</label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Enter Addition Information "
+          />
+          <div class="d-flex button-1">
+            <button class="submit" type="submit" id="submit" value="submit">
+              Submit
+            </button>
+            <a class="close" type="button" id="close-4">Cancel</a>
+          </div>
+        </form>
       </div>
-      <form class="form" name="contact-form" action="" method="post">
-        <div class="d-flex flex-wrap">
-          <label for="name">Name:</label>
-          <input type="text" id="name" required name="name" />
-          <label for="phoneno">Phone no:</label>
-          <input type="number" id="phoneno" required name="phoneno" />
-        </div>
-        <label for="pickup">Pickup Location:</label>
-        <input type="text" id="pickup" required name="pickup" />
-        <div class="d-flex flex-wrap">
-          <label for="time">Time:</label>
-          <input type="time" id="time" name="time" />
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" />
-        </div>
-        <div class="d-flex flex-wrap">
-          <label for="devices">Devices:</label>
-          <select name="device" id="device">
-            <option value="Select Device" selected>Select Device</option>
-            <option value="Mobile">Mobile</option>
-            <option value="Laptop">Laptop</option>
-            <option value="Iphone">Iphone</option>
-            <option value="Macbook">Macbook</option>
-            <option value="iWatch">iWatch</option>
-          </select>
-          <label for="problem">Problem:</label>
-          <select name="problem" id="problem">
-            <option value="What is Problem???">What is Problem???</option>
-            <option value="Screen Isssue">Screen Isssue</option>
-            <option value="Battery issue">Battery issue</option>
-            <option value="Charging Port Issue">Charging Port Issue</option>
-            <option value="Software issue">Software issue</option>
-            <option value="Water or Liquid Issue">Water or Liquid Issue</option>
-            <option value="Speaker and Mic Issue">Speaker and Mic Issue</option>
-          </select>
-        </div>
-        <label for="bestway">Best Way:</label>
-        <select name="bestway" id="bestway">
-          <option value="Best way to Contact You???" selected>Best way to Contact You???</option>
-          <option value="Call">Call</option>
-          <option value="Whatsapp message">Whatsapp message</option>
-          <option value="Sms">Sms</option>
-        </select>
-        <label for="message">Message:</label>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          placeholder="Enter Addition Information "
-        />
-        <div class="d-flex button-1">
-          <button class="submit" type="submit" id="submit" value="submit">Submit</button>
-          <a class="close" type="button" id="close-4">Cancel</a>
-        </div>
-      </form>
     </div>
-  </div>
 
     <!-- main services container  -->
     <div class="container">
@@ -129,24 +174,43 @@
 
       <div class="container contact">
         <div class="contact-info">
-            <div class="phno">
-               <h1>Phone no</h1>
-            </div>
-            <div class="address">
-                <h4>Address</h4>
-            </div>
-            <div class="email">
-                <h5>email</h5>
-            </div>
+          <div class="phno">
+            <h1>Phone no</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              eos saepe sit sint.
+            </p>
+          </div>
+          <div class="address">
+            <h4>Address</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate consequuntur reprehenderit dicta asperiores ducimus
+              nemo.
+            </p>
+          </div>
+          <div class="email">
+            <h5>email</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              ab quae modi nihil tenetur provident, error esse.
+            </p>
+          </div>
         </div>
       </div>
       <div class="container map">
         <div class="map-1">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.4002184281735!2d73.13794597501473!3d33.568956543095936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfec50418743cd%3A0x645fa3c0ba7471ec!2sGourmet%20Bakers%20%26%20Sweets!5e0!3m2!1sen!2s!4v1736315085705!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.4002184281735!2d73.13794597501473!3d33.568956543095936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfec50418743cd%3A0x645fa3c0ba7471ec!2sGourmet%20Bakers%20%26%20Sweets!5e0!3m2!1sen!2s!4v1736315085705!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
-
-
     </div>
 
     <script
@@ -177,7 +241,6 @@
         // document.querySelector("#button-2").style.display = "flex";
         document.querySelector(".popup").style.display = "none";
       });
-
     </script>
     <script src="./js/script.js"></script>
   </body>
