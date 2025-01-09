@@ -153,8 +153,8 @@
     padding: 5px;
 }
 #postalcode{
-text-transfsr:uppercase;
-}    
+    text-transform: uppercase;
+}  
 .form select {
     width: 100%;
     display: block;
